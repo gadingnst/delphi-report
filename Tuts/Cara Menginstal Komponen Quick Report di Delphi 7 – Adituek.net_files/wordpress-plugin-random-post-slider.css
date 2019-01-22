@@ -1,0 +1,132 @@
+#gopiplushome {
+	border: 1px solid #bdc7d8;
+	padding: 10px;
+	margin-bottom: 10px;
+	height: 220px;
+}
+#gopiplushome .post {
+	padding: 10px;
+	width:100%;
+}
+#gopiplushome h2 {
+	/*font-size: 1.6em;*/
+	margin-bottom: 5px;
+}
+#gopiplushome h2 a {
+	text-decoration: none;
+}
+#gopiplushome .details {
+	/*font-size: 0.9em;*/
+	margin-bottom: 15px;
+	color: #000000;
+}
+#gopiplushome .details a {
+	color: #000000;
+	text-decoration: none;
+}
+#gopiplushome .details a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+#gopiplushome .thumb {
+	border: 1px solid #CCC;
+	padding: 5px;
+	float: left;
+	margin: 0 10px 10px 0;
+	background:#FFFFFF;
+}
+#gopiplushome .thumb a {
+	display: block;
+	overflow: hidden;
+}
+#gopiplushome .thumb a img {
+
+}
+#gopiplushome p {
+	/*line-height: 1.4em;*/
+	margin-bottom: 10px;
+}
+#gopiplushome .tags {
+	clear: both;
+	/*font-size: 0.9em;*/
+	color: #000000;
+	margin-bottom: 0;
+}
+#gopiplushome .tags a {
+	text-decoration: none;
+}
+#gopiplushome .readmore {
+	/*font-size: 0.8em;*/
+}
+
+
+
+
+
+
+
+
+#gopipluspages {
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size:16px;
+	height: 270px;
+}
+#gopipluspages .post {
+	padding: 10px;
+}
+#gopipluspages h2 {
+	/*font-size: 1.6em;*/
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size:22px;
+}
+#gopipluspages h2 a {
+	text-decoration: none;
+}
+#gopipluspages .details {
+	/*font-size: 0.9em;*/
+	margin-bottom: 15px;
+	color: #000000;
+	font-style:italic;
+	font-size:13px;
+}
+#gopipluspages .details a {
+	color: #000000;
+	text-decoration: none;
+}
+#gopipluspages .details a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+#gopipluspages .thumb {
+	border: 1px solid #CCC;
+	padding: 5px;
+	float: left;
+	margin: 0 10px 10px 0;
+	background:#FFFFFF;
+}
+#gopipluspages .thumb a {
+	display: block;
+	overflow: hidden;
+}
+#gopipluspages .thumb a img {
+
+}
+#gopipluspages p {
+	/*line-height: 1.4em;*/
+	margin-bottom: 10px;
+}
+#gopipluspages .tags {
+	clear: both;
+	/*font-size: 0.9em;*/
+	color: #000000;
+	margin-bottom: 0;
+}
+#gopipluspages .tags a {
+	text-decoration: none;
+}
+#gopipluspages .readmore {
+	font-size:13px;
+}
