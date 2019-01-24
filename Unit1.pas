@@ -23,10 +23,9 @@ type
     Label4: TLabel;
     Label5: TLabel;
     delete: TButton;
-    printBtn: TButton;
     previewBtn: TButton;
     jurusanInput: TComboBox;
-    procedure searchInputChange(Sender: TObject);
+    cariData: TButton;
     procedure insertClick(Sender: TObject);
     procedure deleteClick(Sender: TObject);
     procedure printBtnClick(Sender: TObject);
@@ -34,6 +33,7 @@ type
     procedure DataSource1DataChange(Sender: TObject; Field: TField);
     procedure refreshReport();
     procedure FormCreate(Sender: TObject);
+    procedure cariDataClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,18 +46,6 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TForm1.searchInputChange(Sender: TObject);
-begin
-    with ADOTable1 do
-    begin
-      if searchInput.Text = '' then ADOTable1.Filtered := false else
-      begin
-        ADOTable1.Filter:='Nama'+' LIKE '+QuotedStr(searchInput.Text+'*');
-        ADOTable1.Filtered:=true;
-      end;
-    end;
-end;
 
 procedure TForm1.insertClick(Sender: TObject);
 begin
@@ -124,6 +112,18 @@ begin
   jurusanInput.Items.Append('Akuntansi');
   jurusanInput.Items.Append('Manajemen Informatika');
   jurusanInput.Items.Append('Bahasa Inggris');
+end;
+
+procedure TForm1.cariDataClick(Sender: TObject);
+begin
+  with ADOTable1 do
+  begin
+    if searchInput.Text = '' then ADOTable1.Filtered := false else
+    begin
+      ADOTable1.Filter:='Nama'+' LIKE '+QuotedStr(searchInput.Text+'*');
+      ADOTable1.Filtered:=true;
+    end;
+  end;
 end;
 
 end.

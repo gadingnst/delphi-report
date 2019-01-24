@@ -15,7 +15,7 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 448
+    Left = 464
     Top = 8
     Width = 137
     Height = 13
@@ -93,12 +93,11 @@ object Form1: TForm1
       end>
   end
   object searchInput: TEdit
-    Left = 456
+    Left = 424
     Top = 32
     Width = 121
     Height = 21
     TabOrder = 1
-    OnChange = searchInputChange
   end
   object insert: TButton
     Left = 56
@@ -139,22 +138,13 @@ object Form1: TForm1
     TabOrder = 6
     OnClick = deleteClick
   end
-  object printBtn: TButton
-    Left = 56
-    Top = 352
-    Width = 75
-    Height = 25
-    Caption = 'Print'
-    TabOrder = 7
-    OnClick = printBtnClick
-  end
   object previewBtn: TButton
-    Left = 152
+    Left = 104
     Top = 352
     Width = 75
     Height = 25
-    Caption = 'Preview'
-    TabOrder = 8
+    Caption = 'Report'
+    TabOrder = 7
     OnClick = previewBtnClick
   end
   object jurusanInput: TComboBox
@@ -164,8 +154,17 @@ object Form1: TForm1
     Height = 21
     ItemHeight = 13
     Sorted = True
-    TabOrder = 9
+    TabOrder = 8
     Text = 'Pilih Jurusan'
+  end
+  object cariData: TButton
+    Left = 560
+    Top = 32
+    Width = 75
+    Height = 25
+    Caption = 'Cari'
+    TabOrder = 9
+    OnClick = cariDataClick
   end
   object ADOConnection1: TADOConnection
     Connected = True
